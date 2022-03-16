@@ -1,0 +1,138 @@
+@import url(//db.onlinewebfonts.com/c/860c3ec7bbc5da3e97233ccecafe512e?family=Circular+Std+Book);
+@font-face {font-family: "Circular Std Book"; src: url("//db.onlinewebfonts.com/t/860c3ec7bbc5da3e97233ccecafe512e.eot"); src: url("//db.onlinewebfonts.com/t/860c3ec7bbc5da3e97233ccecafe512e.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/860c3ec7bbc5da3e97233ccecafe512e.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/860c3ec7bbc5da3e97233ccecafe512e.woff") format("woff"), url("//db.onlinewebfonts.com/t/860c3ec7bbc5da3e97233ccecafe512e.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/860c3ec7bbc5da3e97233ccecafe512e.svg#Circular Std Book") format("svg"); }
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "Circular Std Book";
+	box-sizing: border-box;
+}
+
+html,body{height: 100%;}
+
+.sidebar{
+	background-color: black;
+	width: 250px;
+	float: left;
+	height: 100%;
+	overflow-y: auto;
+	overflow-x: hidden;
+	padding: 10px 10px;
+}
+
+.sidebar-wrapper{
+	padding-bottom: 150px;
+}
+
+.sidebar__logo img{
+	max-width: 150px;
+	width: 100%;
+}
+
+.sidebar__menu a{
+	display: block;
+	margin: 20px 0px;
+	padding: 10px 0px;
+	text-decoration: none;
+	color: rgb(190, 190, 190);
+}
+
+.sidebar__menu a:hover{
+	color:rgb(255, 255, 255)
+}
+
+.sidebar__menu i{
+	margin: 0 15px;
+}
+
+.sidebar__menu a.sidebar__menu__selected{
+	color: white;
+	background-color: rgb(80, 80, 80);
+	border-radius: 5px;
+}
+
+.sidebar__menu__item img{
+	width: 30px;
+	height: 30px;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.sidebar__menu__item {
+	color: rgb(190, 190, 190);
+	margin-top: 12px;
+	cursor: pointer;
+	vertical-align: middle;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+.sidebar__menu__item:hover {
+	color: white;
+}
+
+.sidebar__menu__title{
+	color: white;
+	margin-left: 10px;
+}
+
+.sidebar__menu__item__component{
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	font-weight: bold;
+	display: inline-block;
+	color: black;
+	background-color: #b2b2b2;
+	font-size: 20px;
+	border-radius: 3px;
+
+}
+
+.sidebar__menu__item span{
+	font-size: 15px;
+	padding: 0 10px;
+}
+
+.sidebar__playlists{
+	padding: 20px 0;
+	border-top: 1px solid rgb(40, 40, 40);
+}
+
+.sidebar__playlists a{
+	text-decoration: none;
+	margin: 10px;
+	display: block;
+	color: rgb(190, 190, 190);
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+.sidebar__playlists a:hover{
+	color: white;
+}
+
+.sidebar__playlists__item{
+	margin: 15px;
+	cursor: pointer;
+	display: block;
+}
+
+.sidebar__playlists__item img{
+	width: 30px;
+	height: 30px;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.sidebar__playlists__item span{
+	color: rgb(190, 190, 190);
+	font-size: 15px;
+	padding: 10px 0px;
+	margin: 10px;
+}
+
+.sidebar__playlists__item span:hover{
+	color: white;
+}
