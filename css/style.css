@@ -215,7 +215,7 @@ html,body{height: 100%;}
 }
 
 .player__artist img{
-	max-width: 70px;
+	max-width: 60px;
 	display: inline-block;
 	vertical-align: middle;
 }
@@ -227,11 +227,13 @@ html,body{height: 100%;}
 	margin-left: 10px;
 	display: inline-block;
 	vertical-align: middle;
+	margin-right: 5px;
 }
 
-.player__artist h3 > span{
+.player__artist span{
 	color: rgb(200, 200, 200);
 	font-size: 13px; /* numero da sorte fé */
+	padding: 10px;
 }
 
 .player__control{
