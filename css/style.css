@@ -22,7 +22,7 @@ html,body{height: 100%;}
 }
 
 .sidebar-wraper{
-	padding-bottom: 150px;
+	padding-bottom: 90px;
 }
 
 .sidebar__logo img{
@@ -157,7 +157,7 @@ html,body{height: 100%;}
 }
 
 .main-wraper{
-	padding-bottom: 150px;
+	padding-bottom: 90px;
 }
 
 .main__row__title{
@@ -196,4 +196,16 @@ html,body{height: 100%;}
 	color: rgb(161, 161, 161);
 	text-align: left;
 	font-size: 13px;
+}
+
+.player{
+	width: 100%;
+	padding: 20px;
+	height: 90px;
+	border-top: 2px solid rgb(60, 60, 60);
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	display: flex;
+	background-color: rgb(24, 24, 24);
 }
