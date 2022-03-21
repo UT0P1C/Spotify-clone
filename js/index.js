@@ -12,10 +12,24 @@ pauseBtn.addEventListener("click", (e)=>{
 	playBtn.style.display = "inline";
 	pauseBtn.style.display = "none";
 
+	audioPlayer.pause();
+
+	return false;
+});
+
+playBtn.addEventListener("click", (e)=>{
+	e.preventDefault();
+	
+	playBtn.style.display = "none";
+	pauseBtn.style.display = "inline";
+
+	audioPlayer.pause();
+
 	return false;
 });
 
 const playSong = (file) => {
+
 	if(loaded == false){
 		audioPlayer.innerHTML = `<source type="audio/mp3" src="`+file+`"/>`;
 		loaded = true;
@@ -39,9 +53,10 @@ document.querySelectorAll(".main__col").forEach(item =>{
 		playerArtistComponent[0].innerHTML = `
 		<img src="`+image+`"/>
 
-		<h3> `+artist+` <br> <span> `+song+` </span></h3>
-
+		<h3> `+artist+` <br> <span>`+song+`</span></h3>
 
 		`;
+
+		playSong(file);
 	});
 });
