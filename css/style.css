@@ -209,3 +209,75 @@ html,body{height: 100%;}
 	display: flex;
 	background-color: rgb(24, 24, 24);
 }
+
+.player__artist{
+	width: 20%;
+}
+
+.player__artist img{
+	max-width: 70px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.player__artist h3{
+	font-weight: normal;
+	font-size: 20px;
+	color: white;
+	margin-left: 10px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.player__artist h3 > span{
+	color: rgb(200, 200, 200);
+	font-size: 13px; /* numero da sorte fé */
+}
+
+.player__control{
+	width: 60%;
+	text-align: center;
+}
+
+.player__control__buttons a{
+	color: white;
+	margin: 8px 15px;
+	font-size: 18px;
+}
+
+#playBtn, #pauseBtn{
+	font-size: 25px;
+}
+
+.player__control__progress {
+	width: 100%;
+	max-width: 600px;
+	height: 7px;
+	margin-top: 20px;
+	position: relative;
+	border-radius: 8px;
+	display: inline-block;
+	background: rgb(130, 130, 130);
+}
+
+.player__control__progress_2{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	background-color: white;
+	height: 7px;
+	border-radius: 8px;
+}
+
+@media screen and (max-width: 1200px) {
+	.main__col{
+		width: 30%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.main__col{
+		width: 50%;
+	}
+}
