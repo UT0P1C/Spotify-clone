@@ -23,7 +23,7 @@ playBtn.addEventListener("click", (e)=>{
 	playBtn.style.display = "none";
 	pauseBtn.style.display = "inline";
 
-	audioPlayer.pause();
+	audioPlayer.play();
 
 	return false;
 });
@@ -60,3 +60,8 @@ document.querySelectorAll(".main__col").forEach(item =>{
 		playSong(file);
 	});
 });
+
+
+const progress = document.getElementById("progress");
+
+//futuramente adicionar barra de progresso baseada no audioPlayer.duration
